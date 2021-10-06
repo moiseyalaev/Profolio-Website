@@ -46,7 +46,7 @@ a {
 /* Nav bar icon */
 
 .navbar-brand {
-    font-size: 3rem;
+    font-size: 5vmin;
     font-family: 'Ephesis', cursive;
     color: white;
 }
@@ -142,7 +142,7 @@ a:hover {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem 1rem;
-    font-size: 1.4rem;
+    font-size: 2.5vh;
     position: relative;
     color: white;
 }
@@ -195,7 +195,8 @@ a:hover {
 /* Heading Styling*/
 
 .heading {
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: 9vmin;
     font-family: 'Ephesis', cursive;
     font-weight: 500;
     line-height: 1.5;
