@@ -1,0 +1,23 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "effects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moiseyalaev/Profolio-Website.git"
+  },
+  "author": "Moisey Alaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moiseyalaev/Profolio-Website/issues"
+  },
+  "homepage": "https://github.com/moiseyalaev/Profolio-Website#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.2",
+    "jquery": "^3.6.0"
+  }
+}

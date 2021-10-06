@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    /* Body Spacing */
+    margin-bottom: 60px;
+    padding: 0;
+    /* Text properties of body */
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    line-height: 30px;
+    /* Color for text in body */
+    color: white;
+    background-color: #0c2334;
+}
+
+
+/* links */
+
+a {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* Stuff in navbar */
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+
+/* Navbar items */
+
+.nav-item.dropdown {
+    color: white;
+}
+
+
+/* Nav bar icon */
+
+.navbar-brand {
+    font-size: 3rem;
+    font-family: 'Ephesis', cursive;
+    color: white;
+}
+
+
+/* hovered over links */
+
+a:hover {
+    color: pink;
+}
+
+
+/* full image header with mask and responsiveness */
+
+.header-background {
+    /* Heading spacing and spacing for img */
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 875px;
+    min-width: auto;
+    padding-bottom: 70px;
+    /* Background image  and colors*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 96, 0.9)));
+    background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.74)), url(imgs/pfp.jpg);
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+    /* Responsiveness */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+
+/* sticky navbar settings and styling */
+
+.sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 0px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(168, 127, 13, 0.5);
+}
+
+
+/* Toggler icon  with 3 horizontal lines */
+
+.navbar-toggler {
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: white;
+}
+
+.navbar-toggler span+span {
+    margin-top: 4px;
+    width: 22px;
+}
+
+.navbar-toggler span+span+span {
+    width: 22px;
+}
+
+
+/* Stlye Nav items and active items*/
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: pink;
+}
+
+
+/* dropdown styling for about my */
+
+.dropdown-menu {
+    position: relative;
+    background-color: rgba(12, 35, 52, 0);
+    border: none;
+    width: auto;
+}
+
+.dropdown-item {
+    background-color: rgba(12, 35, 52, 0.4);
+    color: rgba(168, 127, 13, 1);
+    font-size: 20px;
+    text-align: center;
+    /* to fix IE's doubled float-margin bug */
+    float: right;
+    list-style: none;
+    padding: 3px 0px 5px 0px;
+    margin: 7px 100px 0 0;
+    border-radius: 10px;
+}
+
+
+/* Style buttons that link to other sites */
+
+.btn {
+    background-color: rgba(12, 35, 52, 0.55);
+    color: white;
+    border-radius: 100px;
+    border-color: white;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: rgba(168, 127, 13, 0.55);
+    color: white;
+}
+
+
+/* Heading Styling*/
+
+.heading {
+    font-size: 5rem;
+    font-family: 'Ephesis', cursive;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    margin-top: 350px;
+    margin-bottom: 50px;
+    min-height: 100px;
+}
+
+.column-pic1 {
+    min-height: 850px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 96, 0.9)));
+    background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.74)), url(imgs/study.jpg);
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: auto, cover;
+}
+
+.column-pic2 {
+    min-height: 850px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 96, 0.9)));
+    background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.74)), url(imgs/pizza.jpg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-position: center;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: auto, cover;
+}
+
+.column-pic3 {
+    min-height: 850px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 96, 0.9)));
+    background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.74)), url(imgs/Childhood.jpg);
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: auto, cover;
+}
+
+.column-text {
+    margin-top: 30px;
+    padding: 5rem 5rem 0rem 5rem;
+}
+
+
+/* Last text column */
+
+.column-text:nth-of-type(3) {
+    margin-top: 0px;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.paragraph {
+    margin-top: 0px;
+    padding: 50px 50px 0 50px;
+    color: #b1b4bd;
+    font-weight: 300;
+}
+
+#gotopbtn .fas {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#gotopbtn {
+    position: fixed;
+    width: 100px;
+    transition: opacity 0.5s ease-in-out;
+    height: 50px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+    bottom: 20px;
+    color: rgba(168, 127, 13, 0.7);
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0;
+}
+
+.gotopbtn:hover {
+    color: rgba(168, 127, 13, 1);
+}
+
+a#gotopbtn {
+    display: block;
+    text-decoration: none;
+}
