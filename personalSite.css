@@ -4,6 +4,10 @@ html {
     position: relative;
 }
 
+title {
+    font-family: 'Ephesis', cursive;
+}
+
 body {
     /* Body Spacing */
     margin-bottom: 60px;
@@ -303,4 +307,8 @@ a:hover {
 a#gotopbtn {
     display: block;
     text-decoration: none;
+}
+
+.fa-coffee {
+    color: rgba(168, 127, 13, 1);
 }
