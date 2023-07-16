@@ -201,7 +201,7 @@ a:hover {
 .heading {
     /* font-size: 5rem; */
     font-size: 9vmin;
-    font-family: 'Ephesis', cursive;
+    font-family: 'Ephesis', cursive; 
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -260,16 +260,20 @@ a:hover {
 }
 
 .column-text {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 5rem 5rem 0rem 5rem;
 }
 
+/* first text column */
+.column-text:nth-of-type(0) {
+    margin-top: 0px;
+    padding: 4rem 5rem 4rem 5rem;
+}
 
 /* Last text column */
-
-.column-text:nth-of-type(3) {
+.column-text:nth-of-type(2) {
     margin-top: 0px;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 4rem 5rem 4rem 5rem;
 }
 
 .paragraph {
