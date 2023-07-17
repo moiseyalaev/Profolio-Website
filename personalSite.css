@@ -142,7 +142,7 @@ a:hover {
 }
 
 
-/* Stlye Nav items and active items*/
+/* Style Nav items and active items*/
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem 1rem;
@@ -278,7 +278,7 @@ a:hover {
 
 .paragraph {
     margin-top: 0px;
-    padding: 50px 50px 0 50px;
+    padding: 0px 0px 050px;
     color: #b1b4bd;
     font-weight: 300;
 }
