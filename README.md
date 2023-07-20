@@ -1,9 +1,8 @@
 # Profolio-Website
-Files for my personal website. 
-
-I built this site from scratch utilizing Bootstrap's framework, basic HTML/CSS, Javascript for DOM manipulation, and npm commands for setting up the project.
 
 **https://www.moiseyalaev.com/**
+
+I built this site from scratch utilizing Bootstrap's framework, basic HTML/CSS, Javascript for DOM manipulation, and npm commands for setting up the project.
 
 Steps to host your own website:
 1. Get A domain: https://domains.google/
