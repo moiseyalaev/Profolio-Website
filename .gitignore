@@ -1,0 +1,5 @@
+.DS_Store
+mockups/
+docs/
+.claude/
+node_modules/

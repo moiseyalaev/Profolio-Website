@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="imgs/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<title>Album — Moisey Alaev</title>
+<meta name="description" content="Photos from Moisey Alaev's garden, kitchen and time outdoors.">
+</head>
+<body class="personal">
+<div class="wrap">
+  <header class="top">
+    <a class="id" href="index.html"><i></i>Moisey Alaev</a>
+    <nav aria-label="Pages"><a href="index.html">← Back to work</a><span class="seg"><a href="off-the-clock.html">Off the clock</a><a href="album.html" aria-current="page">Album</a></span></nav>
+  </header>
+
+  <main>
+    <div class="p-hero">
+      <span class="mono">Garden · kitchen · outdoors</span>
+      <h1>Album</h1>
+    </div>
+    <nav class="chipsbar" id="chips" aria-label="Filter photos"></nav>
+    <div class="wall" id="wall"></div>
+    <p class="wall-empty" id="wall-empty" hidden>Nothing in this set yet.</p>
+    <noscript><p class="wall-empty">The album needs JavaScript to load its photos.</p></noscript>
+  </main>
+
+  <footer><span class="mono">© 2026 Moisey Alaev</span><a class="mono" href="mailto:moiseyalaev@gmail.com">moiseyalaev@gmail.com</a></footer>
+</div>
+
+<dialog class="viewer" id="viewer" aria-label="Photo viewer">
+  <div class="frame">
+    <div class="vbar"><span class="count" id="v-count"></span><button id="v-close" type="button">Close</button></div>
+    <div class="stage"><img id="v-img" alt=""></div>
+    <div class="vbar"><button id="v-prev" type="button" aria-label="Previous photo">← Prev</button><span class="cap" id="v-cap"></span><button id="v-next" type="button" aria-label="Next photo">Next →</button></div>
+  </div>
+</dialog>
+<script type="module" src="js/album.js"></script>
+</body>
+</html>
