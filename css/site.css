@@ -305,7 +305,8 @@ figure.live { background: #0b0d12; box-shadow: 0 0 0 1px rgba(125, 149, 255, .45
 
 .hi b { font-size: clamp(30px, 3.1vw, 44px); }
 
-html, body { overflow-x: clip; }
+/* hidden is the fallback for browsers without overflow: clip (older iOS Safari) */
+html, body { overflow-x: hidden; overflow-x: clip; }
 
 /* ---------- 4. home page additions ---------- */
 header.top a.id { text-decoration: none; color: inherit; }
@@ -419,3 +420,17 @@ dialog.viewer::backdrop { background: #07080b; }
   .ph { margin-bottom: 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .ph { transition: none; } }
+
+/* ---------- 6. touch targets: at least 40px tall on phones and touch screens ---------- */
+@media (max-width: 900px), (pointer: coarse) {
+  header.top nav a { padding: 11px 0; }
+  header.top nav a.off, header.top nav .seg a { padding: 11px 12px; }
+  header.top a.id { padding: 10px 0; }
+  .live button { min-height: 40px; padding: 10px 12px; }
+  .manual input[type=range] { height: 44px; }
+  .rev summary { padding: 11px 0; }
+  .tl-d a, .rev-link a, footer a.mono { display: inline-block; padding: 12px 0; }
+  .tl .row { min-height: 48px; }
+  .chipsbar a { padding: 13px 14px; }
+  .btn-night { padding: 14px 16px; }
+}
