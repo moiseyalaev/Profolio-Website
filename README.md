@@ -46,4 +46,4 @@ node --test
    python3 scripts/prepare-photo.py ~/Downloads/original.jpg my-slug
    ```
 
-2. Add or update its entry in `js/photos.js`. Remove `pending: true` once both files are in `imgs/album/`.
+2. Add or update its entry in `js/photos.js`. An entry with `pending: true` is skipped until its files exist.

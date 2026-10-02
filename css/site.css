@@ -348,7 +348,7 @@ footer a.mono:hover { color: var(--hot); }
 @media (prefers-reduced-motion: reduce) { .js [data-reveal] { opacity: 1; transform: none; transition: none; } }
 
 /* ---------- 5. personal pages (Off the clock, Album) ---------- */
-body.personal { --night: #0c0e12; --cream: #f3efe4; background: var(--hot); color: var(--night); }
+body.personal { --night: #0c0e12; --cream: #f3efe4; --clay: #d98a62; background: var(--clay); color: var(--night); }
 .personal a { text-decoration-color: var(--night); }
 .personal a:hover { color: #fff; }
 .personal .mono { color: var(--night); }
